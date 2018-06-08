@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "johnny walker")
+
+
+
+
+# IMPLEMENT OpenURI !!!!!!!
+
+# require 'open-uri'
+
+# response = open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list').read
+# URI.parse(response).class
+
+# puts "\n\n#{response.inspect}\n\n"
+
+
+
