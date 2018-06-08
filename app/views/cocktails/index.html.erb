@@ -1,2 +1,13 @@
-<h1>Cocktail#name</h1>
-<h1> <%= Cocktail.name %> </h1>
+<h1>Cocktail Main Page</h1>
+
+<%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+
+
+<% @cocktails.each do |cocktail| %>
+  <h2> <%= cocktail.name %> </h2>
+  <%= link_to "link", cocktail_path(cocktail) %>
+<% end %>
+
+<!--
+link_to(body, url, html_options = {})
+link_to -->
